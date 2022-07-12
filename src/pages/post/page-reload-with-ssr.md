@@ -36,7 +36,7 @@ Or&#x20;
 ## The solution
 
 So the solution is to use built in functionality of Next.js `router` . Using this we can ask Next.js to retrieve the latest from SSR without a hard refresh. If you are in a rush here is the solution:
-import \{ useRouter } from 'next/router';
+
 
 ```javascript
 import { useRouter } from 'next/router';
