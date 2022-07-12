@@ -1,0 +1,27 @@
+---
+import Seo from '../components/Seo.astro';
+import BlogPost from '../components/BlogPost.astro';
+import Footer from '../components/Footer.astro';
+import Navbar from '../components/Navbar.astro';
+const { content } = Astro.props;
+const { title, date, image, description, authors, categories, permalink } = content;
+---
+
+<html lang={content.lang || 'en' }>
+
+<head>
+  <title>{title}</title>
+  <Seo {title} {description} {permalink} {image} />
+</head>
+
+<body>
+  <Navbar />
+  <div>
+    <BlogPost {title} {authors} {image} {date} {categories}>
+      <slot />
+    </BlogPost>
+  </div>
+  <Footer />
+</body>
+
+</html>

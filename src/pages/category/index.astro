@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+
+const allPosts = await Astro.glob('../post/*.md');
+const unique = [...new Set(allPosts.map(item => item.frontmatter.categories))];
+
+---
+
+<Layout title="Categories | James Perkins ">
+  <main class="mx-auto max-w-4xl px-4 md:px-0 min-h-screen">
+    <section class="" aria-label="categories list">
+      <h1 class="text-5xl mb-6 text-center">Categories</h1>
+      <div class="grid grid-cols-1">
+        <ul class="list-none flex gap-2 flex-wrap">
+          {unique.map((tag) => (
+          <li class="inline-block text-xl px-4 py-1 rounded-full bg-primary">
+            <a class="text-white" href={`/category/${tag}`} title={`View posts tagged under "${tag}" `}>{tag}</a>
+          </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>

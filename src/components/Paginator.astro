@@ -1,0 +1,10 @@
+---
+const { page } = Astro.props
+---
+
+<div class="flex justify-center md: justify-end py-6 gap-2">
+  {page.url.prev && <a class="text-base uppercase hover: underline" href={page.url.prev} title="Go to Previous">&larr;
+    Prev</a>}
+  {page.url.next && <a class="text-base uppercase hover: underline" href={page.url.next} title="Go to Next">Next
+    &rarr;</a>}
+</div>

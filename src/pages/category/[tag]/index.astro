@@ -1,0 +1,30 @@
+---
+import BlogPostPreview from "../../../components/BlogPostPreview.astro"
+import Layout from '../../../layouts/Layout.astro';
+export async function getStaticPaths({ }) {
+  const allPosts = await Astro.glob('../../post/*.md');
+  const allTags = [...new Set(allPosts.map(item => item.frontmatter.categories.toLowerCase()))];
+
+  return Array.from(allTags).map((tag) => {
+    const filteredPosts = allPosts.filter((post) => post.frontmatter.categories.includes(tag))
+    return {
+      params: { tag },
+      props: {
+        pages: filteredPosts
+      }
+    };
+  });
+}
+const { pages } = Astro.props
+const { tag } = Astro.params
+---
+
+<Layout title="Blog posts | James Perkins ">
+  <main class="container max-w-3xl mx-auto px-4 mb-20">
+    <section aria-label="Blog post list">
+      <h1 class="text-5xl font-bold text-center	my-4 text-primary">All posts in {tag} category</h1>
+      {pages.map((p) =>
+      <BlogPostPreview post={p} />)}
+    </section>
+  </main>
+</Layout>

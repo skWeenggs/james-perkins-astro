@@ -1,0 +1,16 @@
+---
+export interface Props {
+  post: any;
+}
+const { post } = Astro.props;
+---
+
+<article class="bg-base-100 mb-10 p-5 transition card hover:text-accent-focus first:pt-0">
+  <a href={post.url}>
+    <div>
+      <h2 class="font-black mb-1 text-3xl mt-5 text-secondary">{post.frontmatter.title}</h2>
+      <p class="mb-4 text-accent uppercase text-sm font-bold">{new Date(post.frontmatter.date).toDateString()}</p>
+      <p class="all-prose">{post.frontmatter.description}</p>
+    </div>
+  </a>
+</article>
