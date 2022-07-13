@@ -1,25 +1,29 @@
 ---
+import Seo from "./Seo.astro";
+
 export interface Props {
   title: string;
   authors: Array<String>;
+  description: string;
   categories: Array<String>;
   date: string;
   image: string;
 }
-const { title, authors, image, date, categories } = Astro.props;
+const { title, authors, image, date, categories, description } = Astro.props;
 console.log(authors)
 ---
 
 <div class="">
-  <article class="prose lg:prose-xl mx-auto container max-w-5xl p-10 break-words">
-    <div>
-      <header class="my-4">
-        <h1 class="text-center text-primary">{title}</h1>
-        <p class="publish-date text-accent">{new Date(date).toDateString()}</p>
-      </header>
-      <main>
-        <slot />
-      </main>
-    </div>
-  </article>
+  <Seo title={title} description={description} coverImage={image}>
+    <article class="prose lg:prose-xl mx-auto container max-w-5xl p-10 break-words">
+      <div>
+        <header class="my-4">
+          <h1 class="text-center text-primary">{title}</h1>
+          <p class="publish-date text-accent">{new Date(date).toDateString()}</p>
+        </header>
+        <main>
+          <slot />
+        </main>
+      </div>
+    </article>
 </div>
