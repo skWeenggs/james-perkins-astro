@@ -15,9 +15,11 @@ const url = Astro.canonicalURL.pathname;
 console.log(Astro.canonicalURL)
 ---
 
-<Seo title={title} description={description} coverImage={image} />
-<div class="">
+<head>
+  <Seo title={title} description={description} coverImage={image} />
+</head>
 
+<div class="">
   <article class="prose lg:prose-xl mx-auto container max-w-5xl p-10 break-words">
     <div>
       <header class="my-4">
