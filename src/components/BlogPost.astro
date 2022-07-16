@@ -8,13 +8,16 @@ export interface Props {
   categories: Array<String>;
   date: string;
   image: string;
+
 }
 const { title, authors, image, date, categories, description } = Astro.props;
-const url = Astro.canonicalURL.href;
+const url = Astro.canonicalURL.pathname;
+console.log(Astro.canonicalURL)
 ---
 
+<Seo title={title} description={description} coverImage={image} />
 <div class="">
-  <Seo title={title} description={description} coverImage={image} permalink={url} />
+
   <article class="prose lg:prose-xl mx-auto container max-w-5xl p-10 break-words">
     <div>
       <header class="my-4">

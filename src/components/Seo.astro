@@ -5,7 +5,8 @@ export interface Props {
   permalink: string;
   coverImage: string;
 }
-const { title, description, coverImage, permalink } = Astro.props;
+const { title, description, permalink, coverImage } = Astro.props;
+console.log(coverImage)
 ---
 
 <!-- Global Metadata -->

@@ -1,0 +1,25 @@
+---
+import BlogPostPreview from "../../components/BlogPostPreview.astro"
+import Paginator from "../../components/Paginator.astro";
+import Layout from '../../layouts/Layout.astro';
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await Astro.glob('./*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+
+  return paginate(sortedPosts, {
+    pageSize: 8
+  })
+}
+const { page } = Astro.props
+---
+
+<Layout title="Blog posts | James Perkins ">
+  <main class="container max-w-3xl mx-auto px-4 mb-20">
+    <section aria-label="Blog post list">
+      <h1 class="text-5xl font-bold text-center	my-4 text-primary">All Blog Posts</h1>
+      {page.data.map((p) =>
+      <BlogPostPreview post={p} />)}
+      <Paginator page={page} />
+    </section>
+  </main>
+</Layout>
