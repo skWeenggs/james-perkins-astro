@@ -1,0 +1,15 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props as Props;
+---
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <title>{title}</title>
+  <script defer data-domain="jamesperkins.dev" src="https://plausible.io/js/plausible.js"></script>
+</head>
