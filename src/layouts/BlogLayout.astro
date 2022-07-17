@@ -1,16 +1,15 @@
 ---
-import Seo from '../components/Seo.astro';
 import BlogPost from '../components/BlogPost.astro';
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
 import BaseHead from '../components/BaseHead.astro';
 const { content } = Astro.props;
-const { title, date, image, description, authors, categories, permalink } = content;
+const { title, date, image, description, authors, categories } = content;
 ---
 
 <html lang={content.lang || 'en' }>
 
-<BaseHead />
+<BaseHead title={title} description={description} image={image} />
 
 <body>
   <Navbar />
