@@ -5,11 +5,12 @@ import Navbar from '../components/Navbar.astro';
 import BaseHead from '../components/BaseHead.astro';
 const { content } = Astro.props;
 const { title, date, image, description, authors, categories } = content;
+const url = Astro.canonicalURL.href;
 ---
 
 <html lang={content.lang || 'en' }>
 
-<BaseHead title={title} description={description} image={image} />
+<BaseHead title={title} description={description} image={image} pageType="article" url={url} />
 
 <body>
   <Navbar />

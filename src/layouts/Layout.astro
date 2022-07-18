@@ -8,14 +8,15 @@ export interface Props {
 
 const { title } = Astro.props as Props;
 
-
+const url = Astro.canonicalURL.href
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 
 <BaseHead title={title} description={`${title}`}
-  image="https://res.cloudinary.com/dub20ptvt/image/upload/v1642782664/sgbjmezsorrnhqtwnibg.png" />
+  image="https://res.cloudinary.com/dub20ptvt/image/upload/v1642782664/sgbjmezsorrnhqtwnibg.png" url={url}
+  pageType="website" />
 
 <body>
   <Navbar />
