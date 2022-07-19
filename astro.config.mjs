@@ -7,7 +7,7 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://marvelous-chaja-b4437a.netlify.app',
+  site: 'https://jamesperkins.dev',
   syntaxHighlight: 'prism',
   integrations: [react(), sitemap(), mdx(), tailwind()]
 });
