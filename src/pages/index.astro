@@ -1,5 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import BlogPostPreview from '../components/BlogPostPreview.astro';
+
+const allPosts = await Astro.glob('./post/*.md');
+const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
+const topThree = sortedPosts.slice(0, 3);
+
 ---
 
 <Layout title="Home | James Perkins ">
@@ -14,6 +20,15 @@ import Layout from '../layouts/Layout.astro';
 					<p class="py-6 text-xl">Helping developers understand the Jamstack, and how it can be used to build a faster
 						web.</p>
 				</div>
+
+			</div>
+
+		</div>
+		<div>
+			<h2 class="text-3xl font-bold text-primary mx-4">Latest posts</h2>
+			<div class="container max-w-4xl">{topThree.map((post)=> (
+				<BlogPostPreview post={post} />
+				))}
 			</div>
 		</div>
 	</main>
