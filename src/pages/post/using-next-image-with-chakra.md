@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How to use Chakra UI and Next Image
+draft: false
 date: '2022-01-21T05:00:00.000Z'
 image: >-
     http://res.cloudinary.com/dub20ptvt/image/upload/v1642782051/Blog%20Posts/pkitdslkh3dixmcw9fda.png

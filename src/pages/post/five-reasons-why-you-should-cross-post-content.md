@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: 5 reasons why you should cross post your content
+draft: false
 date: '2022-04-07T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1649365296/Blog%20Posts/cross_post_sp1tjm.png

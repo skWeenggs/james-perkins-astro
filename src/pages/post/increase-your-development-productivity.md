@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Increase your development productivity
+draft: false
 date: '2021-11-09T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642772422/Blog%20Posts/pk7gk93me0kspzqo2gka.webp'
 authors:

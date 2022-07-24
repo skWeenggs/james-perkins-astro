@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How to automate your PRs
+draft: false
 date: '2021-10-31T00:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1642772244/Blog%20Posts/gco6j1r1t1jqeuakq1o5.webp

@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: The trials of portable coding
+draft: false
 date: '2021-11-08T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642774239/Blog%20Posts/lum3qzy9gojjhtcpndmp.webp'
 authors:

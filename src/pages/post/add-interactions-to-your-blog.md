@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: 'How to add claps to your blog '
+draft: false
 date: '2022-01-22T05:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1642876501/Blog%20Posts/z0j5vihc4i6ty2b9tc4z.png

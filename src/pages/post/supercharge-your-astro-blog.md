@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Supercharge your astro blog
+draft: false
 date: '2021-11-04T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642704336/Blog%20Posts/g8yto96oibcz9lnth0wm.webp'
 authors:

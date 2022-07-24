@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Roll Your Tweet my microsaas is live
+draft: false
 date: '2021-10-07T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1633651322/roll_your_tweet_share_junohk.webp'
 authors:

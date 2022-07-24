@@ -3,7 +3,8 @@ import BlogPostPreview from "../../components/BlogPostPreview.astro"
 import Paginator from "../../components/Paginator.astro";
 import Layout from '../../layouts/Layout.astro';
 export async function getStaticPaths({ paginate }) {
-  const allPosts = await Astro.glob('./*.md');
+  let allPosts = await Astro.glob('./*.md');
+  allPosts = allPosts.filter((post) => !post.frontmatter.draft);
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 
   return paginate(sortedPosts, {

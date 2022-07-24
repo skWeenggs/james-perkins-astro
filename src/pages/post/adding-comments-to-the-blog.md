@@ -3,6 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Adding Comments To My Blog
 date: '2021-07-17T00:00:00.000Z'
+draft: false
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642704429/Blog%20Posts/zznforepqmjb9kwrhpft.webp'
 authors:
    James Perkins

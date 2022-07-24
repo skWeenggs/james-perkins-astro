@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Why flag parameters suck
+draft: false
 date: '2021-04-17T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1618778953/feature_flag_losart.webp'
 authors:

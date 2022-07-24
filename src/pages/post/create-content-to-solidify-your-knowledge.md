@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Create content to solidify your knowledge
+draft: false
 date: '2021-05-01T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1619907051/creat-learned_wjlxir.webp'
 authors:

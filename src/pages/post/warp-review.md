@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Warp is the future of terminals
+draft: false
 date: '2022-04-13T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1650152623/Blog%20Posts/Warp/hsospoc5bdm0u26elker.png

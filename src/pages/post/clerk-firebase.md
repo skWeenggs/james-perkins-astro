@@ -3,6 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Learn how to use Firebase & Clerk.dev (CRUD)
 date: '2022-01-06T00:00:00.000Z'
+draft: false
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1641492754/Recipe%20App/xoghdmempyhjadpiogfz.webp
 authors:

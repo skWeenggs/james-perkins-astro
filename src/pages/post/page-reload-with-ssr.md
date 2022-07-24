@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How to reload an SSR page
+draft: false
 date: '2022-04-02T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1649076312/remia9bqtmmcp8yyuvbo.png

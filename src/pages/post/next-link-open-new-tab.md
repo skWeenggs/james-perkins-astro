@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How to open a link in a new tab
+draft: false
 date: '2021-10-29T00:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1642773321/Blog%20Posts/fr5jnorjnx6vg9euod7h.webp

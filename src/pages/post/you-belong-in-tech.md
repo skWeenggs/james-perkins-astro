@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: You Belong In Tech
+draft: false
 date: '2022-07-01T00:00:00.000Z'
 image: >-
   https://res.cloudinary.com/dub20ptvt/image/upload/v1656678032/Blog%20Posts/you-belong-in-tech/vof2ydh1rrorusedmc04.png

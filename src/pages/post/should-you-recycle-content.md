@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Should you recycle content
+draft: false
 date: '2021-11-05T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642773837/Blog%20Posts/hsprudursxxud6xzkqlm.webp'
 authors:

@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Force Reload Next.js Pages
+draft: false
 date: '2021-10-05T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1633284008/force-page-reload_rqi48d.webp'
 authors:

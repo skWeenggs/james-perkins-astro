@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Why I embraced Typescript for development
+draft: false
 date: '2021-06-26T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1624743050/Embrace_Typescript_ly0g9c.webp'
 authors:

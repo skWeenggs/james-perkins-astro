@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Developers Hangout Podcast Update
+draft: false
 date: '2021-08-09T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1628455828/Developers_Hangout_Update_kwfwf3.webp'
 authors:

@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: My experience with Netlify
+draft: false
 date: '2021-11-01T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642772865/Blog%20Posts/k3tg0eh5261xex4oxn5u.webp'
 authors:

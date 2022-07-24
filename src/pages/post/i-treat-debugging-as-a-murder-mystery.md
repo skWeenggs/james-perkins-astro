@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: I treat debugging as a murder mystery
+draft: false
 date: '2021-05-07T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1620501992/murder-mystery_tmmku1.jpg'
 authors:

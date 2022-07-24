@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Why I created Developers Hangout podcast
+draft: false
 date: '2021-07-03T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1625336633/WHY_I_LAUCHED_DEVE_HANG_ym8u8t.webp'
 authors:

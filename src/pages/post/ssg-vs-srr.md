@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: SSR VS SSG
+draft: false
 date: '2021-08-04T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642774025/Blog%20Posts/og2v04elaojgsfpuhucp.webp'
 authors:

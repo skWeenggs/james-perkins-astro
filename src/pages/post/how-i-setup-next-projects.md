@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How I setup Next.js Projects
+draft: false
 date: '2021-10-30T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1619907051/creat-learned_wjlxir.webp'
 authors:

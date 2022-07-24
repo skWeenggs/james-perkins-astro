@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: NextJS FaunaDB Crash Course
+draft: false
 date: '2021-05-07T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1618489775/faunadb_ff42sf.webp'
 authors:

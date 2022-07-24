@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: DaisyUI - Make Tailwind components with ease!
+draft: false
 date: '2021-10-28T00:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1635377217/Tailwind_uryoth.webp

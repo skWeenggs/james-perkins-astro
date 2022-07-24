@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How I automate Productivity using Session and AppleScript
+draft: false
 date: '2021-11-02T00:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1642771477/Blog%20Posts/ap0llteoc9vvmetmpjxq.webp

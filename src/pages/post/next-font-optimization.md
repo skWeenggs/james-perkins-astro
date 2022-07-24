@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Next.js -  How to optimize fonts
+draft: false
 date: '2022-05-02T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1651535244/Blog%20Posts/Yellow_And_Green_Bold_Money_Blog_Banner_gjpzog.png

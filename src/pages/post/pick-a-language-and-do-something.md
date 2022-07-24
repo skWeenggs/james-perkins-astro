@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Pick a lanaguage and do something
+draft: false
 date: '2019-09-17T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1618489783/pick-a-language_tpbwg4.webp'
 authors:

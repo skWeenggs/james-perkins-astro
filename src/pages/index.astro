@@ -2,7 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 
-const allPosts = await Astro.glob('./post/*.md');
+let allPosts = await Astro.glob('./post/*.md');
+allPosts = allPosts.filter((post) => !post.frontmatter.draft);
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
 const topThree = sortedPosts.slice(0, 3);
 

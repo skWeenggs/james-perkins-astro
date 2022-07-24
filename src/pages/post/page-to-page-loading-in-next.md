@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: How to handle page to page loading in Next.js
+draft: false
 date: '2022-03-22T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1648161149/Blog%20Posts/Page_to_page_loading_with_nextjs_iuitn9.png

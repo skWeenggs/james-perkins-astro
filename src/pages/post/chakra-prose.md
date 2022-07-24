@@ -3,6 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Chakra Prose is finally here
 date: '2022-03-27T04:00:00.000Z'
+draft: false
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1648302940/Blog%20Posts/chakra-prose_jwbyum.png
 authors:

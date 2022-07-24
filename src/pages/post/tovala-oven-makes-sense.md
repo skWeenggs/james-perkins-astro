@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Tovala Oven, Smart tech that makes sense!
+draft: false
 date: '2021-11-06T00:00:00.000Z'
 image: 'https://res.cloudinary.com/dub20ptvt/image/upload/v1642774372/Blog%20Posts/vphv4svwlmc42uybocxy.webp'
 authors:

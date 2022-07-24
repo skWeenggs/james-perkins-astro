@@ -25,6 +25,7 @@ collections: # A list of collections the CMS should be able to edit
           default: '../../layouts/BlogLayout.astro'
         }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Cover Image', name: 'image', widget: 'image' }
       - { label: 'Author', name: 'authors', widget: 'string' }

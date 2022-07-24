@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Dealing with Date objects in Next data fetching
+draft: false
 date: '2021-11-10T00:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1642773038/Blog%20Posts/szsc0zjxgvl11lbghhyc.webp

@@ -2,6 +2,7 @@
 setup: |
   import Layout from '../../layouts/BlogLayout.astro'
 title: Using Next Middleware to access and use geolocation in a non dynamic route
+draft: false
 date: '2022-05-05T04:00:00.000Z'
 image: >-
     https://res.cloudinary.com/dub20ptvt/image/upload/v1651792569/Blog%20Posts/gpadwqy14sxmcycqd2jc.png

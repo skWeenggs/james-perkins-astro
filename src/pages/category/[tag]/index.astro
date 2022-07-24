@@ -2,7 +2,8 @@
 import BlogPostPreview from "../../../components/BlogPostPreview.astro"
 import Layout from '../../../layouts/Layout.astro';
 export async function getStaticPaths({ }) {
-  const allPosts = await Astro.glob('../../post/*.md');
+  let allPosts = await Astro.glob('../../post/*.md');
+  allPosts = allPosts.filter((post) => !post.frontmatter.draft);
   const allTags = [...new Set(allPosts.map(item => item.frontmatter.categories.toLowerCase()))];
 
   return Array.from(allTags).map((tag) => {
