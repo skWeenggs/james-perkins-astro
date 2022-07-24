@@ -16,6 +16,7 @@ collections: # A list of collections the CMS should be able to edit
     label: 'Post' # Used in the UI, ie.: "New Post"
     folder: 'src/pages/post' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    publish_mode: editorial_workflow,
     fields: # The fields each document in this collection have
       - {
           label: 'Layout',
@@ -25,7 +26,7 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Cover Image', name: 'image', widget: 'string' }
+      - { label: 'Cover Image', name: 'image', widget: 'image' }
       - { label: 'Author', name: 'authors', widget: 'string' }
       - { label: 'Categories', name: 'categories', widget: 'list' }
       - { label: 'Description', name: 'description', widget: 'text' }
