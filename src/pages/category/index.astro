@@ -2,7 +2,8 @@
 import Layout from '../../layouts/Layout.astro';
 
 
-const allPosts = await Astro.glob('../post/*.md');
+let allPosts = await Astro.glob('../post/*.md');
+allPosts = allPosts.filter((post) => !post.frontmatter.draft);
 const unique = [...new Set(allPosts.map(item => item.frontmatter.categories))];
 
 ---
