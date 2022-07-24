@@ -10,7 +10,7 @@ import Layout from '../layouts/Layout.astro';
       <form class="my-4" name="contact" netlify>
         <div class="grid gap-6 sm:grid-cols-2">
           <div class="relative z-0">
-            <input type="text" name="name"
+            <input type="text" name="name" required
               class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-primary focus:border-blue-600 focus:outline-none focus:ring-0"
               placeholder=" " />
             <label
@@ -18,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
               name</label>
           </div>
           <div class="relative z-0">
-            <input type="text" name="email"
+            <input type="text" name="email" required
               class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-primary focus:border-blue-600 focus:outline-none focus:ring-0"
               placeholder=" " />
             <label
@@ -26,7 +26,7 @@ import Layout from '../layouts/Layout.astro';
               email</label>
           </div>
           <div class="relative z-0 col-span-2">
-            <textarea name="message" rows={5}
+            <textarea name="message" rows={5} required
               class="peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-primary focus:border-blue-600 focus:outline-none focus:ring-0"
               placeholder=" "></textarea>
             <label
