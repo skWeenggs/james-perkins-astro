@@ -1,13 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
 import ButtonComponent from "../components/ButtonComponent";
 import Hero from "../components/Hero";
-let allPosts = await Astro.glob('./post/*.md');
-allPosts = allPosts.filter((post) => !post.frontmatter.draft);
-const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
-const topThree = sortedPosts.slice(0, 3);
-
 ---
 
 <Layout title="Home | James Perkins ">
@@ -15,9 +9,7 @@ const topThree = sortedPosts.slice(0, 3);
 		<Hero />
 		<div class="my-8">
 			<h2 class="text-4xl font-bold text-primary mx-4">Latest posts</h2>
-			<div class="container max-w-5xl mx-auto">{topThree.map((post)=> (
-				<BlogPostPreview post={post} />
-				))}
+			<div class="container max-w-5xl mx-auto">
 			</div>
 		</div>
 
