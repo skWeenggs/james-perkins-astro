@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
-import ImageCar from "../components/ImageCar";
+import ButtonComponent from "../components/ButtonComponent";
 let allPosts = await Astro.glob('./post/*.md');
 allPosts = allPosts.filter((post) => !post.frontmatter.draft);
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
@@ -34,5 +34,5 @@ const topThree = sortedPosts.slice(0, 3);
 		</div>
 
 	</main>
-	<ImageCar client:visible />
+	<ButtonComponent client:visible />
 </Layout>

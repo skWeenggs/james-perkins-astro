@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ImageCar() {
+export default function ButtonComponent() {
   const test = () => {
     alert("Loaded");
   }
