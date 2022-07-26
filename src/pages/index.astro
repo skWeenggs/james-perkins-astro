@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import ButtonComponent from "../components/ButtonComponent";
+import Hero from "../components/Hero";
 let allPosts = await Astro.glob('./post/*.md');
 allPosts = allPosts.filter((post) => !post.frontmatter.draft);
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.date).valueOf() - new Date(a.frontmatter.date).valueOf());
@@ -11,20 +12,7 @@ const topThree = sortedPosts.slice(0, 3);
 
 <Layout title="Home | James Perkins ">
 	<main class="container max-w-6xl mx-auto px-4 mb-20">
-		<div class="hero min-h-full">
-			<div class="hero-content flex-col justify-center lg:flex-row-reverse mb-12">
-				<img src="https://res.cloudinary.com/dub20ptvt/image/upload/v1656522533/PFP_Slack_tsiwxe.webp"
-					alt="James Perkins" class="md:max-w-sm rounded-lg shadow-2xl object-contain" />
-				<div>
-					<h1 class="text-5xl font-bold">James Perkins</h1>
-					<p>Sr Developer Advocate</p>
-					<p class="py-6 text-xl">Helping developers understand the Jamstack, and how it can be used to build a faster
-						web.</p>
-				</div>
-
-			</div>
-
-		</div>
+		<Hero />
 		<div class="my-8">
 			<h2 class="text-4xl font-bold text-primary mx-4">Latest posts</h2>
 			<div class="container max-w-5xl mx-auto">{topThree.map((post)=> (
