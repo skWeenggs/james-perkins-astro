@@ -47,7 +47,7 @@ Command History is one of the best features of Warp, not because it’s a powerf
 
 You get two options when you press control + r you can scroll through all of the history items or you can just type at the beginning of the command. Here is an example of me typing the word yarn into my history search:
 
-![Command Example](https://res.cloudinary.com/dub20ptvt/image/upload/v1650151224/Blog%20Posts/Warp/qjhucpszhyfyuukoeqwj.png)
+![History example](https://res.cloudinary.com/dub20ptvt/image/upload/v1650151133/Blog%20Posts/Warp/x4baa9qeumyoyh1jbojm.png)
 
 
 ### **Custom workflows**
@@ -73,6 +73,6 @@ arguments:
       description: Directory for extensions
 ```
 
-My custom workflow takes two arguments which and when used will open my code_profiles stored for visual studio code
+My custom workflow takes two arguments which and when used will open my `code_profiles` stored for visual studio code.
 
 So that is it, my top three tools that I use every single day of the week, and absolutely love them!
